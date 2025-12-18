@@ -12,4 +12,12 @@ Ce jeu de données est pertinent pour une analyse actuarielle puisqu'il permet d
 
 En raison de la taille importante du fichier, les données brutes ne sont pas incluses directement dans ce dépot. Elles peuvent être téléchargées à partir du portail Données Québec.
 Les données sont accessibles publiquement à l'adresse suivante: https://www.donneesquebec.ca/recherche/dataset/vmtl-collisions-routieres/resource/05deae93-d9fc-4acb-9779-e0942b5e962f 
+
 Le fichier CSV doit être téléchargé manuellement et placé dans le dossier data/raw avant d'exécuter un script. 
+
+## Structure du projet
+Le dépot est organisé de la façon suivante:
+ - data/: données brutes et transformées
+ - src/: scripts R pour les différentes étapes de l'analyse
+ - docs/: rapport final
+ - results/: graphiques et tableaux générés
