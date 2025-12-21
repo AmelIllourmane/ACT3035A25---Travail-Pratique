@@ -13,8 +13,8 @@
 - Importer les données brutes
 - Effectuer une première inspection de la strcution des données 
 
-#--CODE---
 
+#--CODE---
 # Chargement de la librairie nécessaire 
 library(readr)
 
