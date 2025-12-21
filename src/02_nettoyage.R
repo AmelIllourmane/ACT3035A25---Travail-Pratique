@@ -6,3 +6,8 @@
 #---CODE---
 # Chargement de la librairie nécessaire 
 Library(tidyverse)
+#Lecture des données brutes 
+collisions_raw <- read_csv("data/raw/collisions_routieres.csv")
+View(collisions_raw)
+
+
