@@ -31,5 +31,8 @@ vars_selectionnees <- c(
   "nb_automobile_camion_leger",
   "nb_motocyclette"
 )
+vars_selectionnees
+
+
 
 
