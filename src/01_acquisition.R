@@ -1,4 +1,3 @@
-
 # ---Description : 
 # Ce script permet d'effectuer l'acquisition des données utilisées dans le cadre du projet. 
 # Les données proviennent du portail Données Québec et concernent les collisions routières sur le territoire de la ville de Montréal.
