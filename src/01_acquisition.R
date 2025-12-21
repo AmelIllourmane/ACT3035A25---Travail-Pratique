@@ -21,7 +21,7 @@ library(readr)
 # Chemin vers les données brutes
 chemin_donnees_brutes <- "data/raw/collisions_routieres.csv"
 
-# Importation des données
+# Importation des données à partir du dossier data raw 
 donnees_collisions_brutes <- read_csv(chemin_donnees_brutes)
 
 # Inspection initiale des données
