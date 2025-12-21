@@ -33,6 +33,10 @@ vars_selectionnees <- c(
 )
 vars_selectionnees
 
+#Création du jeu de données filtré 
+collisions_processed <- collisions_raw %>%
+  select(all_of(vars_selectionnees))
+view(collisions_processed)
 
 
 
