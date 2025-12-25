@@ -38,10 +38,15 @@ collisions_processed <- collisions_raw %>%
   select(all_of(vars_selectionnees))
 view(collisions_processed)
 
+#Suppression des observations contenant des valeurs manquantes 
 colSums(is.na(collisions_processed))
 collisions_clean <- collisions_processed %>%
   drop_na()
 
+#Dimensions avant et après le nettoyage
+dim(collisions_processed)
+dim(collisions_clean)
+ 
 
 
 
