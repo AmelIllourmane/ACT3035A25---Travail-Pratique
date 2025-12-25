@@ -46,7 +46,20 @@ collisions_clean <- collisions_processed %>%
 #Dimensions avant et après le nettoyage
 dim(collisions_processed)
 dim(collisions_clean)
- 
+summary(collisions_clean)
+
+#Conversion des varaibles catégorielles en facteurs 
+view(collisions_clean)
+collisions_clean <- collisions_clean %>% 
+  mutate(
+    GRAVITE= as.factor(GRAVITE),
+    CD_COND_METEO= as.factor(CD_COND_METEO),
+    CD_ETAT_SURFC= as.factor(CD_ETAT_SURFC),
+    CD_CATEG_ROUTE= as.factor(CD_CATEG_ROUTE)
+  )
+
+
+
 
 
 
