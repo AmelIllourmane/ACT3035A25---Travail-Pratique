@@ -38,5 +38,11 @@ collisions_processed <- collisions_raw %>%
   select(all_of(vars_selectionnees))
 view(collisions_processed)
 
+colSums(is.na(collisions_processed))
+collisions_clean <- collisions_processed %>%
+  drop_na()
+
+
+
 
 
