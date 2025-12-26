@@ -73,11 +73,6 @@ collisions_clean <- collisions_clean %>%
     )
   )
 
-
-
-
-
-
     #Variable catégorie route
 
 
