@@ -47,6 +47,11 @@ collisions_clean %>%
   mutate(pourcentage = n / sum(n) * 100)
   # Ça nous donne le nombre de collisions par gravité et la proportion de chaque gravité 
 
+# Tableau de fréquence pour la météo 
+collisions_clean %>%
+  count(CD_COND_METEO) %>%
+  mutate(pourcentage = n / sum(n) * 100)
+  # Ça nous donne le nombre d'accidents pour chaque condition météorologique et la porportion de chaque condition 
 
 
 
