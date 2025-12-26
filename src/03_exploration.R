@@ -41,6 +41,11 @@ collisions_clean %>%
   # Le nombre de véhicules impliqués par collision est en moyenne proche de 2, ce qui indique que la majorité des accidents  sont des collisions entre 2 véhicules.
   # On remarque aussi que les automobiles et camions légers sont les types de véhicules les plus frequemment impliqués contrairement aux motocyclettes.
 
+# Tableau de fréquence pour la gravité des collisions 
+collisions_clean %>%
+  count(GRAVITE) %>%
+  mutate(pourcentage = n / sum(n) * 100)
+
 
 
 
