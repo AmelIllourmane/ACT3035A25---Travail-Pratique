@@ -86,6 +86,22 @@ collisions_clean <- collisions_clean %>%
     )
   )
     #Variable catégorie route
+collisions_clean <- collisions_clean %>%
+  mutate(
+    CATEG_ROUTE = case_when(
+      CD_CATEG_ROUTE == 11 ~ "Bretelle_collecteur_voie_service",
+      CD_CATEG_ROUTE == 12 ~ "Route_numérotée",
+      CD_CATEG_ROUTE == 13 ~ "Artère_principale",
+      CD_CATEG_ROUTE == 14 ~ "Rue_résidentielle",
+      CD_CATEG_ROUTE == 15 ~ "Chemin_rang",
+      CD_CATEG_ROUTE == 16 ~ "Ruelle",
+      CD_CATEG_ROUTE == 21 ~ "Stationnement",
+      CD_CATEG_ROUTE == 22 ~ "Terrain_privé",
+      CD_CATEG_ROUTE == 23 ~ "Chemin_privé",
+      CD_CATEG_ROUTE == 24 ~ "Chemin_forestier",
+      TRUE ~ NA
+    )
+  )
 
 
 
