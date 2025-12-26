@@ -48,6 +48,40 @@ dim(collisions_processed)
 dim(collisions_clean)
 summary(collisions_clean)
 
+
+#Encodage des variables catégorielles: j'ai trouvé la signification de chacun des codes dans le dictionnaire de données de la SAAQ 
+     #Variable condition météo
+
+
+
+    #Variable État de la surface 
+collisions_clean <- collisions_clean %>%
+  mutate(
+    ETAT_SURFACE = case_when(
+      CD_ETAT_SURFC == 11 ~ "Sèche",
+      CD_ETAT_SURFC == 12 ~ "Mouillée",
+      CD_ETAT_SURFC == 13 ~ "Mouillée",
+      CD_ETAT_SURFC == 14 ~ "Enneigée",
+      CD_ETAT_SURFC == 15 ~ "Enneigée",
+      CD_ETAT_SURFC == 16 ~ "Enneigée",
+      CD_ETAT_SURFC == 17 ~ "Enneigée",
+      CD_ETAT_SURFC == 18 ~ "Glacée",
+      CD_ETAT_SURFC == 19 ~ "Autre",
+      CD_ETAT_SURFC == 20 ~ "Autre",
+      CD_ETAT_SURFC == 99 ~ "Non précisé",
+      TRUE ~ NA
+    )
+  )
+
+
+
+
+
+
+    #Variable catégorie route
+
+
+
 #Conversion des variables catégorielles en facteurs 
 view(collisions_clean)
 collisions_clean <- collisions_clean %>% 
