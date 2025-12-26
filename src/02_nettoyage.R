@@ -48,7 +48,7 @@ dim(collisions_processed)
 dim(collisions_clean)
 summary(collisions_clean)
 
-#Conversion des varaibles catégorielles en facteurs 
+#Conversion des variables catégorielles en facteurs 
 view(collisions_clean)
 collisions_clean <- collisions_clean %>% 
   mutate(
@@ -58,6 +58,9 @@ collisions_clean <- collisions_clean %>%
     CD_CATEG_ROUTE= as.factor(CD_CATEG_ROUTE)
   )
 
+#Vérification 
+str(collisions_clean)
+summary(collisions_clean)
 
 
 
