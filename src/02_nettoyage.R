@@ -62,7 +62,10 @@ collisions_clean <- collisions_clean %>%
 str(collisions_clean)
 summary(collisions_clean)
 
-
+#Sauvegarde des données nettoyées
+write_csv(
+  collisions_clean, "data/processed/collisions_nettoyees.csv"
+)
 
 
 
