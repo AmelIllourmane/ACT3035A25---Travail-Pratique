@@ -24,9 +24,20 @@ Le dépot est organisé de la façon suivante:
 
 #### Description des scripts 
   ##### 1. Acquisition des données: 
-     # Ce script documente l'acquisition du jeu de données utilisé pour le projet. Comme indiqué précédemment, les données ont été téléchargées manuellement à partir du portail Données Québec, puis importées
-     # dans l'environnement R. Aucune transformation n'est effectuée à cette étape, afin de conserver les données brutes dans leur format initial. Ce script permet aussi de faire une première vérification de
-     # la structure du jeu de données.  
+     # Ce script documente l'acquisition du jeu de données utilisé pour le projet. Comme indiqué précédemment, les données ont été téléchargées manuellement à partir du portail Données Québec, puis importées dans l'environnement R. Aucune transformation n'est effectuée à cette étape, afin de conserver les données brutes dans leur format initial. Ce script permet aussi de faire une première vérification de la structure du jeu de données.  
+
+     # Chargement de la librairie nécessaire 
+     library(readr)
+
+     # Chemin vers les données brutes
+     chemin_donnees_brutes <- "data/raw/collisions_routieres.csv"
+     
+     # Importation des données à partir du dossier data raw 
+     donnees_collisions_brutes <- read_csv(chemin_donnees_brutes)
+     
+     # Inspection initiale des données
+     dim(donnees_collisions_brutes)
+     summary(donnees_collisions_brutes)
   
   ##### 2. Nettoyage et préparation des données
      
