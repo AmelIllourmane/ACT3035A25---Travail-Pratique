@@ -42,7 +42,9 @@ données brutes dans leur format initial. Ce script permet aussi de faire une pr
      summary(donnees_collisions_brutes)
   
   ##### 2. Nettoyage et préparation des données
-     
+Ce script réalise les étapes de transformation du processus ETL. Les variables pertinentes pour l'analyse sont sélectionnées, les valeurs manquantes 
+sont traitées, et les variables codées numériquement sont transformées en facteurs. Le jeu de données ainsi nettoyé est ensuite sauvegardé dans le dossier data/processed. 
+
   ##### 3. Analyse exploratoire des données
 
   ##### 5. Modélisation statistique
