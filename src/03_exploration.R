@@ -35,8 +35,11 @@ collisions_clean %>%
     ecart_type_nb_veh = sd(NB_VEH_IMPLIQUES_ACCDN, na.rm = TRUE)
   )
 
-# 
-
+# Analyse des distributions
+  # Les statistiques descriptives montrent que la vitesse autorisée moyenne est d'environ 46 km/h avec une médiane de 50 km/h , ce qui indique que la moitié
+  # des collisions ont eu lieu sur des routes dont la limitation de vitesse est de 50 km/h ou moins. 
+  # Le nombre de véhicules impliqués par collision est en moyenne proche de 2, ce qui indique que la majorité des accidents  sont des collisions entre 2 véhicules.
+  # On remarque aussi que les automobiles et camions légers sont les types de véhicules les plus frequemment impliqués contrairement aux motocyclettes.
 
 
 
