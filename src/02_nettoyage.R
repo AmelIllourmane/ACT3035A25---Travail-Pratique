@@ -51,9 +51,22 @@ summary(collisions_clean)
 
 #Encodage des variables catégorielles: j'ai trouvé la signification de chacun des codes dans le dictionnaire de données de la SAAQ 
      #Variable condition météo
-
-
-
+collisions_clean <- collisions_clean %>%
+  mutate(
+    COND_METEO = case_when(
+      CD_COND_METEO == 11 ~ "Clair",
+      CD_COND_METEO == 12 ~ "Couvert",
+      CD_COND_METEO == 13 ~ "Brouillard",
+      CD_COND_METEO == 14 ~ "Pluie",
+      CD_COND_METEO == 15 ~ "Pluie forte",
+      CD_COND_METEO == 16 ~ "Vent fort",
+      CD_COND_METEO == 17 ~ "Neige/Grêle",
+      CD_COND_METEO == 18 ~ "Tempête de neige",
+      CD_COND_METEO == 19 ~ "Verglas",
+      CD_COND_METEO == 99 ~ "Non précisé",
+      TRUE ~ NA
+    )
+  )
     #Variable État de la surface 
 collisions_clean <- collisions_clean %>%
   mutate(
@@ -72,7 +85,6 @@ collisions_clean <- collisions_clean %>%
       TRUE ~ NA
     )
   )
-
     #Variable catégorie route
 
 
