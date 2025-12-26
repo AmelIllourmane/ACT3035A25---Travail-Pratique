@@ -103,8 +103,6 @@ collisions_clean <- collisions_clean %>%
     )
   )
 
-
-
 #Conversion des variables catégorielles en facteurs 
 view(collisions_clean)
 collisions_clean <- collisions_clean %>% 
