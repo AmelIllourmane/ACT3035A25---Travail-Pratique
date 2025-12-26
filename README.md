@@ -21,3 +21,20 @@ Le dépot est organisé de la façon suivante:
  - src/: scripts R pour les différentes étapes de l'analyse
  - docs/: rapport final
  - results/: graphiques et tableaux générés
+
+#### Description des scripts 
+  1. Acquisition des données
+     Ce script documente l'acquisition du jeu de données utilisé pour le projet. Comme indiqué précédemment, les données ont été téléchargées manuellement à partir du portail Données Québec, puis importées
+     dans l'environnement R. Aucune transformation n'est effectuée à cette étape, afin de conserver les données brutes dans leur format initial. Ce script permet aussi de faire une première vérification de
+     la structure du jeu de données.  
+  
+  2. Nettoyage et préparation des données
+     
+  3. Analyse exploratoire des données
+
+  5. Modélisation statistique
+
+  6. Comparaison et interprétation des modèles 
+
+
+
