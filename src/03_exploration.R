@@ -125,6 +125,10 @@ ggplot(collisions_clean, aes(x = GRAVITE)) +
     y = "Nombre d'accidents"
   )
 
+# Gravité vs vitesse autorisée 
+ggplot(collisions_clean, aes(x = VITESSE_AUTOR, y = NB_VEH_IMPLIQUES_ACCDN, color = GRAVITE)) + geom_point()
+
+# Vitesse vs nombre motos impliquées
 
 
 
