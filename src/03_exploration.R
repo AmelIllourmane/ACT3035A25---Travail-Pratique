@@ -63,15 +63,19 @@ collisions_clean %>%
   count(ETAT_SURFACE) %>%
   mutate(pourcentage = n / sum(n) * 100)
   # Ça nous donne le nombre d'accidents pour chaque état de la surface de la route
-  # La distribution montre que les accidents surviennent majoritairement sur des artères principales, qui représentent environ 55 % des observations de collisions. 
-  # Les rues résidentielles constituent la deuxieme catégorie la plus fréquente avec environ 33% des accidents. On remarque que les accidents surviennent sur des 
-  # voies à usage quotidien ou fortement fréquentées. 
+  # La distribution montre que 66% des accidents ont lieu sur une chaussée sèche tandis que les surfaces mouillées représentent 18% de la proportion. 
+  # Les conditions hivernales telles que la neige et la glace constituent qaund à elles environ 15% des accidents. Bien que la majorité des accidents surviennet
+  # sur des surfaces sèches les conditions défavorables mériteraient une attention particulière car elle pourraient être associées à une plus grande gravité
+  # des accidents.
 
 # Tableau de fréquence pour la catégorie de la route 
 collisions_clean %>%
   count(CATEG_ROUTE) %>%
   mutate(pourcentage = n / sum(n) * 100)
-
+   # Ça nous donne le nombre d'accidents pour chaque catégorie de la route
+   # La distribution montre que les accidents surviennent majoritairement sur des artères principales, qui représentent environ 55 % des observations de collisions. 
+   # Les rues résidentielles constituent la deuxieme catégorie la plus fréquente avec environ 33% des accidents. On remarque que les accidents surviennent sur des 
+   # voies à usage quotidien ou fortement fréquentées. 
 
 
 
