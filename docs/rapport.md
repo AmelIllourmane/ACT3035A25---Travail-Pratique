@@ -67,6 +67,9 @@ Les nuages de points ne révèlent pas de relation linéaire claire entre la vit
 
 
 ## 5. Définition du problème actuariel 
+### Variable réponse
+La variable réponse retenue pour la modélisation est la gravité de la collision (GRAVITE). Dans le cadre de ce projet, cette variable est considérée sous une forme binaire. On distingue donc les accidents graves des accidents non graves. Ce choix permet de simplifier l’analyse tout en conservant l’information essentielle liée à la sévérité des événements.
+
 
 
 ## 6. Modélisation actuarielle 
