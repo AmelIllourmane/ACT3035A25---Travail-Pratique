@@ -52,8 +52,9 @@ Des visualisations (histogrammes, densités, boxplots et nuages de points) perme
 L’analyse ne permet toutefois pas directement de faire des relations simples et linéaires entre les variables explicatives et la gravité, justifiant l’utilisation de modèles statistiques pour l’étape de modélisation.
 
   ##### 5. Modélisation statistique
-La modélisation vise à estimer la probabilité qu’une collision routière soit grave non en fonction de caractéristiques observables liées à l’environnement routier et à d’autres conditions externes.
-Des modèles statistiques adaptés à une variable réponse binaire sont utilisés afin d’évaluer l’influence des variables explicatives retenues et de comparer leurs performances. La variable réponse est donc la gravité de l’accident.
+La modélisation vise à estimer la probabilité qu’une collision routière soit grave non en fonction de caractéristiques observées liées à l’environnement routier et à d’autres conditions externes.
+Des modèles statistiques adaptés à une variable réponse binaire sont utilisés afin d’évaluer l’influence des variables retenues.
+La variable réponse est donc la gravité de l’accident.
 
   ##### 6. Comparaison et interprétation des modèles 
 
