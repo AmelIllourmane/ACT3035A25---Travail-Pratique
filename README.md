@@ -46,6 +46,10 @@ Ce script réalise les étapes de transformation du processus ETL. Les variables
 sont traitées, et les variables codées numériquement sont transformées en facteurs. Le jeu de données ainsi nettoyé est ensuite sauvegardé dans le dossier data/processed. 
 
   ##### 3. Analyse exploratoire des données
+Une analyse exploratoire est  réalisée afin d’examiner la distribution des variables et les relations potentielles entre celles-ci.  
+Des tableaux de fréquences sont produits pour les variables catégorielles (gravité, conditions météorologiques, état de la surface et catégorie de route).  
+Des visualisations (histogrammes, densités, boxplots et nuages de points) permettent quand à eux  d’explorer les variables numériques, notamment la vitesse autorisée et le nombre de véhicules impliqués.
+L’analyse ne permet toutefois pas directement de faire des relations simples et linéaires entre les variables explicatives et la gravité, justifiant l’utilisation de modèles statistiques pour l’étape de modélisation.
 
   ##### 5. Modélisation statistique
 
