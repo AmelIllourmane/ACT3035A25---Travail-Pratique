@@ -114,14 +114,19 @@ ggplot(collisions_clean, aes(x = GRAVITE, y = VITESSE_AUTOR)) +
     y = "Vitesse autorisée (km/h)"
   )
 
-# 3. GRAPHIQUES DE CORRÉLATION 
+# 3. GRAPHIQUES DE CORRÉLATION ET GRAPHIQUES POUR VARIABLES CATÉGORIELLES
+
+# Distribution de la gravité 
+ggplot(collisions_clean, aes(x = GRAVITE)) +
+  geom_bar() +
+  labs(
+    title = "Distribution de la gravité des accidents",
+    x = "Gravité",
+    y = "Nombre d'accidents"
+  )
 
 
 
-
-
-
-# 4. GRAPHIQUES POUR VARIABLES CATÉGORIELLES 
 
 
 
