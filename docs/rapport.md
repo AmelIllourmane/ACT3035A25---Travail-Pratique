@@ -52,7 +52,7 @@ Les vitesses se concentrent principalement autour de valeurs urbaines et périur
 Le nombre de véhicules impliqués dans un accident (NB_VEH_IMPLIQUES_ACCDN) présente une distribution très concentrée autour de 1 et 2 véhicules, les accidents impliquant un grand nombre de véhicules étant rares.
 
 ### Analyse des variables catégorielles
-Des tableaux de fréquences ont été produits pour les variables catégorielles suivantes : "Gravité", "Conditions météorologiques ", "État de la surface de la chaussée" , "Catégorie de route" 
+Des tableaux de fréquences ont été produits pour les variables catégorielles suivantes : "Gravité", "Conditions météorologiques ", "État de la surface de la chaussée" , "Catégorie de route" .
 L’analyse montre que :
 -	Les accidents surviennent majoritairement lors de conditions météorologiques normales (temps clair ou couvert).
 -	La surface de la chaussée est le plus souvent sèche lors des accidents.
