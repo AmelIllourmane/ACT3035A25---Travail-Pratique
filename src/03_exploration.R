@@ -13,7 +13,7 @@ collisions_clean <- read_csv("data/processed/collisions_nettoyees.csv")
 dim(collisions_clean)
 str(collisions_clean)
 
-# Statistiques descriptives des variables numériques 
+# STATISTIQUES DESCRIPTIVES DES VARIABLES NUMÉRIQUES
 collisions_clean %>%
   select(
     VITESSE_AUTOR,
@@ -41,6 +41,7 @@ collisions_clean %>%
   # Le nombre de véhicules impliqués par collision est en moyenne proche de 2, ce qui indique que la majorité des accidents  sont des collisions entre 2 véhicules.
   # On remarque aussi que les automobiles et camions légers sont les types de véhicules les plus frequemment impliqués contrairement aux motocyclettes.
 
+# TABLEAUX DE FRÉQUENCES VARIABLES CATÉGORIELLES 
 # Tableau de fréquence pour la gravité des collisions 
 collisions_clean %>%
   count(GRAVITE) %>%
@@ -77,6 +78,7 @@ collisions_clean %>%
    # Les rues résidentielles constituent la deuxieme catégorie la plus fréquente avec environ 33% des accidents. On remarque que les accidents surviennent sur des 
    # voies à usage quotidien ou fortement fréquentées. 
 
+# HISTOGRAMMES ET GRAPHIQUES DE DENSITÉ 
 
 
 
