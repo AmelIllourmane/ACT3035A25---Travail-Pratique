@@ -73,6 +73,9 @@ La variable réponse retenue pour la modélisation est la gravité de la collisi
 ### Justification actuarielle 
 D’un point de vue actuariel, la gravité d’un accident constitue un élément très important lors de l’évaluation du risque en assurance automobile. Les accidents graves sont généralement associés à des coûts beaucoup plus élevés, notamment en raison des dommages corporels et des indemnisations qui y sont associées. Modéliser la probabilité qu’un accident soit grave ou pas permet donc de mieux comprendre les facteurs de risque et d’estimer la tarification. 
 
+### Objectif de la modélisation 
+L’objectif de la modélisation est d’estimer la probabilité qu’une collision routière soit grave en fonction des caractéristiques observées de l’accident.
+
 
 ## 6. Modélisation actuarielle 
 
