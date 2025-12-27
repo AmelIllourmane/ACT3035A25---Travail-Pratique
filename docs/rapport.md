@@ -48,8 +48,8 @@ La variable GRAVITE a d’abord été analysée à l’aide de tableaux de fréq
 
 ### Analyse des variables numériques
 La distribution de la vitesse autorisée (VITESSE_AUTOR) a été étudiée à l’aide d’un histogramme et d’un graphique de densité.
-Les vitesses se concentrent principalement autour de valeurs urbaines et périurbaines, avec un pic autour de 50 km/h, ce qui reflète le contexte majoritairement urbain des accidents observés.
-Le nombre de véhicules impliqués dans un accident (NB_VEH_IMPLIQUES_ACCDN) présente une distribution très concentrée autour de 1 et 2 véhicules, les accidents impliquant un grand nombre de véhicules étant rares.
+Les vitesses se concentrent principalement autour de 50 km/h, ce qui reflète un contexte majoritairement urbain des accidents observés.
+Le nombre de véhicules impliqués dans un accident (NB_VEH_IMPLIQUES_ACCDN) présente une distribution très concentrée autour de 1 et 2 véhicules, les accidents impliquant un grand nombre de véhicules sont très rares.
 
 ### Analyse des variables catégorielles
 Des tableaux de fréquences ont été produits pour les variables catégorielles suivantes : "Gravité", "Conditions météorologiques ", "État de la surface de la chaussée" , "Catégorie de route" .
@@ -58,6 +58,12 @@ L’analyse montre que :
 -	La surface de la chaussée est le plus souvent sèche lors des accidents.
 -	Certaines catégories de routes comment les artères principales concentrent une part importante des accidents.
 
+### Relations entre variables
+Des graphiques exploratoires ont été produits afin d’examiner les relations entre plusieurs variables :
+- Gravité et vitesse autorisée (boxplots)
+Les boxplots suggèrent une dispersion légèrement plus élevée des vitesses autorisées pour les accidents les plus graves, bien qu’aucune séparation nette ne soit observée entre les niveaux de gravité.
+- Vitesse autorisée et nombre de véhicules impliqués (nuages de points)
+Les nuages de points ne révèlent pas de relation linéaire claire entre la vitesse autorisée et le nombre de véhicules impliqués, quelle que soit la gravité.
 
 
 ## 5. Définition du problème actuariel 
