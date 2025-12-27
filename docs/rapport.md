@@ -6,7 +6,7 @@ La gravité des accidents influence directement les indemnisations versées, tan
 Dans une perspective actuarielle, il est donc essentiel de comprendre les facteurs associés à la gravité pour évaluer le risque futur. 
 Dans ce projet, on analyse un jeu de données public portant sur les collisions routières survenues au Québec. À partir de ces données, on réalise un processus
 d'axtraction, de transformation et d'analyse exploratoire afin de mieux comprendre les caractéristiques des accidents et les potentielles relations entre les variables. 
-L'objectif principal est de modéliser la gravité des collisions en fonction de variables liées à l'environnement routier et à diverses conditions.  
+L'objectif principal est de modéliser la gravité des collisions en fonction de variables liées à l'environnement routier et à diverses conditions externes.  
 
 ## 2. Description des données 
 
