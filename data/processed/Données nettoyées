@@ -3,4 +3,3 @@
 # Les données nettoyées sont générées par le script `src/02_nettoyage.R`.
 
 # Fichier attendu : collisions_clean.csv
-
