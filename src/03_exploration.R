@@ -131,23 +131,7 @@ ggplot(collisions_clean, aes(x = VITESSE_AUTOR, y = NB_VEH_IMPLIQUES_ACCDN, colo
 # Vitesse vs nombre motos impliquées
 ggplot(collisions_clean,aes(x = VITESSE_AUTOR, y = nb_motocyclette, color = GRAVITE)) + geom_point()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Gravité selon conditions météo 
+ggplot(collisions_clean, aes(x = COND_METEO, fill = GRAVITE)) + geom_bar(position = "fill")
 
 
