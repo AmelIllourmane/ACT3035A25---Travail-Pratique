@@ -1,0 +1,17 @@
+# Données brutes
+
+#Le fichier de données brutes est trop volumineux pour être versionné sur GitHub.
+
+# Pour reproduire le projet :
+# 1. Télécharger le jeu de données "Collisions routières – Ville de Montréal" depuis Données Québec
+# 2. Enregistrer le fichier CSV dans ce dossier sous le nom : collisions_routieres.csv dans un dossier data / raw 
+
+# Charger la librairie nécessaire 
+ library(readr)
+
+# Chemin vers les données brutes
+ chemin_donnees_brutes <- "data/raw/collisions_routieres.csv"
+ 
+# Importation des données à partir du dossier data raw 
+ donnees_collisions_brutes <- read_csv(chemin_donnees_brutes)
+ 
