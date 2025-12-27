@@ -54,7 +54,7 @@ collisions_clean %>%
   # Ça nous donne le nombre d'accidents pour chaque condition météorologique et la porportion de chaque condition 
   # Le tableau de fréquences des conditions météorologiques montre que 70% des accidents surviennent sous des conditions météorologiques favorables à la
   # conduite, soit des conditions claires. Les conditions météorologiques plus défavorables (pluie, neige, verglas, brouillard) représentent une proportion
-  # plus faible des accidents, ce qui implique que le volume de circulation est plus élevé lorsque les conditions sont normales.
+  # plus faible des accidents, ce qui implique que le volume de circulation est plus élevé lorsque les conditions sont normales, donc plus de risque d'accident.
 
 # Tableau de fréquence pour l'état de la surface 
 collisions_clean %>%
