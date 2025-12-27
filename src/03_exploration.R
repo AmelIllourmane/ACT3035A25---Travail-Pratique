@@ -46,6 +46,8 @@ collisions_clean %>%
   count(GRAVITE) %>%
   mutate(pourcentage = n / sum(n) * 100)
   # Ça nous donne le nombre de collisions par gravité et la proportion de chaque gravité 
+  # On remarque que la majorité des accidents observés entrainent uniquement des dommages matériels , tandis que les accidents graves et mortels demeurent très rares, 
+  # représentant seulement 1 a 2 % des observations. 
 
 # Tableau de fréquence pour la météo 
 collisions_clean %>%
