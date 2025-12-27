@@ -41,7 +41,9 @@ collisions_clean %>%
   # Le nombre de véhicules impliqués par collision est en moyenne proche de 2, ce qui indique que la majorité des accidents  sont des collisions entre 2 véhicules.
   # On remarque aussi que les automobiles et camions légers sont les types de véhicules les plus frequemment impliqués contrairement aux motocyclettes.
 
+
 # TABLEAUX DE FRÉQUENCES VARIABLES CATÉGORIELLES 
+
 # Tableau de fréquence pour la gravité des collisions 
 collisions_clean %>%
   count(GRAVITE) %>%
@@ -78,7 +80,54 @@ collisions_clean %>%
    # Les rues résidentielles constituent la deuxieme catégorie la plus fréquente avec environ 33% des accidents. On remarque que les accidents surviennent sur des 
    # voies à usage quotidien ou fortement fréquentées. 
 
-# HISTOGRAMMES ET GRAPHIQUES DE DENSITÉ 
+
+# 1. HISTOGRAMMES ET GRAPHIQUES DE DENSITÉ VARIABLES NUMÉRIQUES  
+
+# Histogramme vitesse autorisée 
+library(tidyverse)
+
+ggplot(collisions_clean, aes(x = VITESSE_AUTOR)) +
+  geom_histogram(binwidth = 10, fill = "blue", color = "white") +
+  labs(
+    title = "Distribution de la vitesse autorisée",
+    x = "Vitesse autorisée (km/h)",
+    y = "Nombre d'accidents"
+  )
+
+# Graphique de densité vitesse de densité 
+
+
+
+
+# 2. BOITES À MOUSTACHES (BOXPLOTS)
+
+
+
+
+
+
+# 3. GRAPHIQUES DE CORRÉLATION 
+
+
+
+
+
+
+# 4. GRAPHIQUES POUR VARIABLES CATÉGORIELLES 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
