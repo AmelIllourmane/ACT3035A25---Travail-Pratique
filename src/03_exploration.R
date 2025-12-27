@@ -105,10 +105,14 @@ ggplot(collisions_clean, aes(x = VITESSE_AUTOR)) +
 
 # 2. BOITES À MOUSTACHES (BOXPLOTS)
 
-
-
-
-
+# Boxplot vitesse par gravité
+ggplot(collisions_clean, aes(x = GRAVITE, y = VITESSE_AUTOR)) +
+  geom_boxplot(fill = "red") +
+  labs(
+    title = "Vitesse autorisée selon la gravité de l'accident",
+    x = "Gravité",
+    y = "Vitesse autorisée (km/h)"
+  )
 
 # 3. GRAPHIQUES DE CORRÉLATION 
 
