@@ -49,11 +49,23 @@ collisions_clean %>%
 
 # Tableau de fréquence pour la météo 
 collisions_clean %>%
-  count(CD_COND_METEO) %>%
+  count(COND_METEO) %>%
   mutate(pourcentage = n / sum(n) * 100)
   # Ça nous donne le nombre d'accidents pour chaque condition météorologique et la porportion de chaque condition 
+  # Le tableau de fréquences des conditions météorologiques montre que 70% des accidents surviennent sous des conditions météorologiques favorables à la
+  # conduite, soit des conditions claires. Les conditions météorologiques plus défavorables (pluie, neige, verglas, brouillard) représentent une proportion
+  # plus faible des accidents, ce qui implique que le volume de circulation est plus élevé lorsque les conditions sont normales.
 
-
+# Tableau de fréquence pour l'état de la surface 
+collisions_clean %>%
+  count(ETAT_SURFACE) %>%
+  mutate(pourcentage = n / sum(n) * 100)
+  # Ça nous donne le nombre d'accidents pour chaque état de la surface de la route
+  
+# Tableau de fréquence pour la catégorie de la route 
+collisions_clean %>%
+  count(CATEG_ROUTE) %>%
+  mutate(pourcentage = n / sum(n) * 100)
 
 
 
