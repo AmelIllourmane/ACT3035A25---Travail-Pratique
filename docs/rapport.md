@@ -70,6 +70,8 @@ Les nuages de points ne révèlent pas de relation linéaire claire entre la vit
 ### Variable réponse
 La variable réponse retenue pour la modélisation est la gravité de la collision (GRAVITE). Dans le cadre de ce projet, cette variable est considérée sous une forme binaire. On distingue donc les accidents graves des accidents non graves. Ce choix permet de simplifier l’analyse tout en conservant l’information essentielle liée à la sévérité des événements.
 
+### Justification actuarielle 
+D’un point de vue actuariel, la gravité d’un accident constitue un élément très important lors de l’évaluation du risque en assurance automobile. Les accidents graves sont généralement associés à des coûts beaucoup plus élevés, notamment en raison des dommages corporels et des indemnisations qui y sont associées. Modéliser la probabilité qu’un accident soit grave ou pas permet donc de mieux comprendre les facteurs de risque et d’estimer la tarification. 
 
 
 ## 6. Modélisation actuarielle 
