@@ -129,6 +129,7 @@ ggplot(collisions_clean, aes(x = GRAVITE)) +
 ggplot(collisions_clean, aes(x = VITESSE_AUTOR, y = NB_VEH_IMPLIQUES_ACCDN, color = GRAVITE)) + geom_point()
 
 # Vitesse vs nombre motos impliquées
+ggplot(collisions_clean,aes(x = VITESSE_AUTOR, y = nb_motocyclette, color = GRAVITE)) + geom_point()
 
 
 
