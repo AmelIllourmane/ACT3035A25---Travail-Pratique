@@ -22,22 +22,26 @@ Le nombre d'observations est largement suffisant pour permettre une analyse stat
 permettentd'illustrer un défi actuariel lié à l'assurance automobile.
 
 ## 3. Processus ETL 
-    - Extraction des données 
+### Extraction des données 
 Les données ont été obtenues par téléchargement manuel à partir de Données Québec. Le jeu de données à été téléchargé sous forme de fichier CSV et enregistré dans un dossier data/raw , sans aucune modification pour conserver les données brutes.
 L'importation des données dans l'environnement R a ensuite été réalisée à l'aide des fonctions du package readr.
 
-    - Tranformation des données 
+### Tranformation des données 
 La transformation consiste à préparer les données pour l'analyse et la modélisation actuarielle.
 Dans le cadre de ce projet, seules certaines variables ont été retenues afin de concentrer l'analyse sur les facteurs les plus pertinents pour l'étude 
 de la gravité des collisions. Les variables retenues décrivent notamment le moment de l'accident, l'environnment routier, l'état de la route et les véhicules exposés dans l'accident. 
 On a supprimé les observations incomplètes pour traiter les valeurs manquantes.
 Les variables catégorielles ont quant à elles été transformées et codées afin de les rendre plus faciles à lire et afin de mieux les exploiter dans les analyses. 
 
-    - Chargement des données 
+### Chargement des données 
 Suite à l'étape du nettoyage  et de tranformation, le jeu de données final a été sauvegardé dans le dossier data/processed.
 Ce fichier constitue la version à utiliser pour l'analyse exploratoire. 
 
 ## 4. Analyse exploratoire des données 
+### Analyse exploratoire des données
+Une analyse exploratoire des données a été réalisée afin de mieux comprendre la structure du jeu de données, la distribution des variables et les relations potentielles entre celles-ci, avant toute modélisation actuarielle.
+### Distribution de la variable réponse
+La variable GRAVITE a d’abord été analysée à l’aide de tableaux de fréquences et de graphiques en barres. Les résultats montrent que la majorité des accidents sont de gravité faible, tandis que les accidents graves sont relativement rares. 
 
 
 
