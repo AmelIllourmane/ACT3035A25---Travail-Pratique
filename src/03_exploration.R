@@ -83,9 +83,9 @@ collisions_clean %>%
 
 # 1. HISTOGRAMMES ET GRAPHIQUES DE DENSITÉ VARIABLES NUMÉRIQUES  
 
-# Histogramme vitesse autorisée 
 library(tidyverse)
 
+# Histogramme vitesse autorisée 
 ggplot(collisions_clean, aes(x = VITESSE_AUTOR)) +
   geom_histogram(binwidth = 10, fill = "blue", color = "white") +
   labs(
@@ -95,9 +95,13 @@ ggplot(collisions_clean, aes(x = VITESSE_AUTOR)) +
   )
 
 # Graphique de densité vitesse de densité 
-
-
-
+ggplot(collisions_clean, aes(x = VITESSE_AUTOR)) +
+  geom_density(fill = "blue", alpha = 0.5) +
+  labs(
+    title = "Densité de la vitesse autorisée",
+    x = "Vitesse autorisée (km/h)",
+    y = "Densité"
+  )
 
 # 2. BOITES À MOUSTACHES (BOXPLOTS)
 
