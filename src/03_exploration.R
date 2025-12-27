@@ -94,7 +94,7 @@ ggplot(collisions_clean, aes(x = VITESSE_AUTOR)) +
     y = "Nombre d'accidents"
   )
 
-# Graphique de densité vitesse de densité 
+# Graphique de densité vitesse autorisée 
 ggplot(collisions_clean, aes(x = VITESSE_AUTOR)) +
   geom_density(fill = "blue", alpha = 0.5) +
   labs(
