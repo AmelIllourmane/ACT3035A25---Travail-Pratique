@@ -48,3 +48,10 @@ modele_logistique <- glm( gravite_binaire ~ .,
 
 summary(modele_logistique)
 
+    # Prédiction sur l'échantillon test 
+Y_pred <- predict(
+  modele_logistique,
+  newdata = X_test,
+  type = "response"
+)
+
