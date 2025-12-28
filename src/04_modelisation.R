@@ -37,4 +37,8 @@ X_test  <- X[-indice_repartition,]
 Y_train <- Y[indice_repartition]
 Y_test  <- Y[-indice_repartition]
 
+dim(X_train)
+dim(X_test)
+
+
 
