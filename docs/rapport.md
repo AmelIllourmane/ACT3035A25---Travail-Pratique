@@ -102,4 +102,8 @@ Le modèle linéaire n’est pas le plus approprié dans ce contexte, car la var
 
 
 ## 7. Comparaison des modèles , discussion et limites 
-Comparativement au modèle linéaire, la régression logistique est plus adaptée puisqu’elle modélise directement la probabilité qu’un accident soit grave. Les coefficients peuvent être plus facilement interprétées et les prédictions sont contraintes entre 0 et 1.
+La comparaison entre le modèle linéaire et la régression logistique montre que les deux approches utilisent des facteurs similaires associés à la gravité des collisions, notamment la vitesse autorisée, le type de véhicules impliqués et certaines caractéristiques de la route. Toutefois, la régression logistique s’avère plus appropriée dans ce contexte, puisqu’elle permet de modéliser directement la probabilité qu’une collision soit grave, contrairement au modèle linéaire dont les prédictions ne sont pas contraintes entre 0 et 1.
+
+L’analyse présente néanmoins certaines limites. La variable réponse est fortement déséquilibrée, les collisions graves étant peu fréquentes, ce qui réduit la capacité des modèles à bien identifier ces événements. De plus, l’utilisation de beaucoup de variables codées rend l’interprétation plus complexe. 
+
+Des améliorations possibles incluraient l’utilisation de méthodes tenant compte du déséquilibre des classes, l’ajout de variables explicatives supplémentaires pertinentes et la simplification d’autres variables.
