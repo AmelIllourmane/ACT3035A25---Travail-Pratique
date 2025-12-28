@@ -84,6 +84,20 @@ L’objectif de la modélisation est d’estimer la probabilité qu’une collis
 
 ## 6. Modélisation actuarielle 
 
+   ###### -   Modèle 1 : Régression logistique  
+Choix du modèle: La variable réponse gravite a été transformée en une variable binaire gravite_binaire (collision grave vs non grave).
+Dans ce contexte, la régression logistique est un modèle approprié, car : 
+la variable à prédire est binaire ; 
+elle permet d’estimer la probabilité qu’une collision soit grave ; 
+elle est largement utilisée en actuariat pour la sélection des risques et l’analyse d’événements rares.
+
+Le modèle de régression logistique montre que la gravité des collisions est principalement influencée par la vitesse autorisée, le type de véhicules impliqués et certaines caractéristiques de la route. Une vitesse plus élevée est associée à une probabilité accrue de collisions graves. La présence de motocyclettes augmente le risque de gravité, ce qui reflète la vulnérabilité des usagers. Les conditions météorologiques ne ressortent pas comme un facteur significatif une fois les autres variables prises en compte. D’un point de vue actuariel, ces résultats permettent d’identifier des facteurs utiles pour la prévention et la tarification.
+
+Le tableau de classification montre que le modèle prédit systématiquement la classe des collisions non graves. On remarque une bonne performance globale en général sur les collisions non graves, mais les collisions graves ne sont pas correctement identifiées. Ce résultat est principalement dû à un fort déséquilibre des classes, les collisions graves représentant une trop faible proportion des observations.
+
+   ###### -   Modèle 2 : Modèle linéaire généralisé (GLM)
+
+
 
 
 ## 7. Comparaison des modèles 
