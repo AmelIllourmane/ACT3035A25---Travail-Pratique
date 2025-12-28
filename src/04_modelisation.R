@@ -14,8 +14,7 @@ donnees <- collisions_clean %>%
 donnees <- donnees %>%
   mutate(gravite_binaire = ifelse(GRAVITE %in% c("Grave", "Mortel"), 1, 0))
 
-
-
+    # Séparation X/Y (comme en cours)
 Y <- donnees$gravite_binaire
 X <- donnees %>%
   select(
