@@ -42,20 +42,6 @@ L’analyse ne permet toutefois pas directement de faire des relations simples e
 La modélisation vise à estimer la probabilité qu’une collision routière soit grave ou non en fonction de caractéristiques observées liées à l’environnement routier et à d’autres conditions externes.
 Des modèles statistiques adaptés à une variable réponse binaire sont utilisés afin d’évaluer l’influence des variables retenues. La variable réponse est la gravité de l’accident. On construit donc deux modèles actuariels qu'on va ensuite comparer. 
 
-   ###### -   Modèle 1 : Régression logistique  
-Choix du modèle: La variable réponse gravite a été transformée en une variable binaire gravite_binaire (collision grave vs non grave).
-Dans ce contexte, la régression logistique est un modèle approprié, car : 
-la variable à prédire est binaire ; 
-elle permet d’estimer la probabilité qu’une collision soit grave ; 
-elle est largement utilisée en actuariat pour la sélection des risques et l’analyse d’événements rares.
-
-Le modèle de régression logistique montre que la gravité des collisions est principalement influencée par la vitesse autorisée, le type de véhicules impliqués et certaines caractéristiques de la route. Une vitesse plus élevée est associée à une probabilité accrue de collisions graves. La présence de motocyclettes augmente le risque de gravité, ce qui reflète la vulnérabilité des usagers. Les conditions météorologiques ne ressortent pas comme un facteur significatif une fois les autres variables prises en compte. D’un point de vue actuariel, ces résultats permettent d’identifier des facteurs utiles pour la prévention et la tarification.
-
-Le tableau de classification montre que le modèle prédit systématiquement la classe des collisions non graves. On remarque une bonne performance globale en général sur les collisions non graves, mais les collisions graves ne sont pas correctement identifiées. Ce résultat est principalement dû à un fort déséquilibre des classes, les collisions graves représentant une trop faible proportion des observations.
-
-   ###### -   Modèle 2 : Modèle linéaire généralisé (GLM)
-
-
 
    
 
