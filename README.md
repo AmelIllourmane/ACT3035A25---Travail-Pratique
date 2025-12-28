@@ -49,7 +49,7 @@ la variable à prédire est binaire ;
 elle permet d’estimer la probabilité qu’une collision soit grave ; 
 elle est largement utilisée en actuariat pour la sélection des risques et l’analyse d’événements rares.
 
-
+Le modèle de régression logistique montre que la gravité des collisions est principalement influencée par la vitesse autorisée, le type de véhicules impliqués et certaines caractéristiques de la route. Une vitesse plus élevée est associée à une probabilité accrue de collisions graves. La présence de motocyclettes augmente le risque de gravité, ce qui reflète la vulnérabilité des usagers. Les conditions météorologiques ne ressortent pas comme un facteur significatif une fois les autres variables prises en compte. D’un point de vue actuariel, ces résultats permettent d’identifier des facteurs utiles pour la prévention et la tarification.
 
    ###### -   Modèle 2 : Modèle linéaire généralisé (GLM)
 
