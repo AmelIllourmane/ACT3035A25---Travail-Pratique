@@ -40,5 +40,11 @@ Y_test  <- Y[-indice_repartition]
 dim(X_train)
 dim(X_test)
 
+    # Modèle de régression logistique
+modele_logistique <- glm( gravite_binaire ~ .,
+  data = cbind(X_train, gravite_binaire = Y_train),
+  family = binomial()
+)
 
+summary(modele_logistique)
 
