@@ -3,3 +3,28 @@
 # Il utilise deux modèles actuariels: 
     # 1. La régression logistique 
     # 2. Le modèle linéaire généralisé (GLM) 
+
+#1. RÉGRESSION LOGISTIQUE
+
+    # Création de la variable gravite_binaire
+donnees <- donnees %>%
+  mutate(gravite_binaire = ifelse(GRAVITE %in% c("Grave", "Mortel"), 1, 0))
+
+
+Y <- donnees$gravite_binaire
+X <- donnees %>%
+  select(
+    VITESSE_AUTOR,
+    NB_VEH_IMPLIQUES_ACCDN,
+    CD_COND_METEO,
+    CD_ETAT_SURFC,
+    CD_CATEG_ROUTE,
+    nb_automobile_camion_leger,
+    nb_motocyclette
+  )
+
+
+    # Prétraitement des données 
+donnees <- collisions_clean %>%
+  mutate(across(where(is.character), as.factor))
+
