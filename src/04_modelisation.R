@@ -6,6 +6,10 @@
 
 #1. RÉGRESSION LOGISTIQUE
 
+    # Prétraitement des données 
+donnees <- collisions_clean %>%
+  mutate(across(where(is.character), as.factor))
+
     # Création de la variable gravite_binaire
 donnees <- donnees %>%
   mutate(gravite_binaire = ifelse(GRAVITE %in% c("Grave", "Mortel"), 1, 0))
@@ -20,11 +24,4 @@ X <- donnees %>%
     CD_ETAT_SURFC,
     CD_CATEG_ROUTE,
     nb_automobile_camion_leger,
-    nb_motocyclette
-  )
-
-
-    # Prétraitement des données 
-donnees <- collisions_clean %>%
-  mutate(across(where(is.character), as.factor))
-
+    nb_motocyclette )
