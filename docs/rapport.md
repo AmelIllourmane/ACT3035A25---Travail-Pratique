@@ -97,8 +97,8 @@ Le modèle de régression logistique montre que la gravité des collisions est p
 Le tableau de classification montre que le modèle prédit systématiquement la classe des collisions non graves. On remarque une bonne performance globale en général sur les collisions non graves, mais les collisions graves ne sont pas correctement identifiées. Ce résultat est principalement dû à un fort déséquilibre des classes, les collisions graves représentant une trop faible proportion des observations.
 
    ###### -   Modèle 2 : Modèle linéaire 
-
-
+On peut interpréter les coefficients de la manière suivante : Un coefficient positif indique que la variable augmente la gravité des collisions, un coefficient négatif indique une diminution de la gravité, les variables liées à la vitesse et à la présence de motocyclettes ont un effet positif sur la gravité.
+Le modèle linéaire n’est pas le plus approprié dans ce contexte, car la variable réponse est binaire. Le modèle peut produire des prédictions inférieures à 0 ou supérieures à 1, ce qui ne correspond pas à une probabilité.
 
 
 ## 7. Comparaison des modèles , discussion et limites 
