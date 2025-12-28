@@ -117,10 +117,8 @@ ggplot(collisions_clean, aes(x = GRAVITE, y = VITESSE_AUTOR)) +
 # 3. GRAPHIQUES DE CORRÉLATION ET GRAPHIQUES POUR VARIABLES CATÉGORIELLES
 
 # Distribution de la gravité 
-ggplot(collisions_clean, aes(x = GRAVITE)) +
-  geom_bar() +
-  labs(
-    title = "Distribution de la gravité des accidents",
+ggplot(collisions_clean, aes(x = GRAVITE)) + geom_bar() +
+  labs( title = "Distribution de la gravité des accidents",
     x = "Gravité",
     y = "Nombre d'accidents"
   )
@@ -133,5 +131,11 @@ ggplot(collisions_clean,aes(x = VITESSE_AUTOR, y = nb_motocyclette, color = GRAV
 
 # Gravité selon conditions météo 
 ggplot(collisions_clean, aes(x = COND_METEO, fill = GRAVITE)) + geom_bar(position = "fill")
+
+# Gravité selon nombre de véhicules impliqués
+ggplot(collisions_clean, aes(x = NB_VEH_IMPLIQUES_ACCDN , fill = GRAVITE)) + geom_bar(position = "fill")
+
+# Gravité selon catégorie de route 
+ggplot(collisions_clean, aes(x = CATEG_ROUTE , fill = GRAVITE)) + geom_bar(position = "fill")
 
 
