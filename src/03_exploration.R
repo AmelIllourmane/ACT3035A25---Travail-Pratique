@@ -113,6 +113,16 @@ ggplot(collisions_clean, aes(x = GRAVITE, y = VITESSE_AUTOR)) +
 
 # 3. GRAPHIQUES DE CORRÉLATION ET GRAPHIQUES POUR VARIABLES CATÉGORIELLES
 
+# Corrélation entre variables numériques 
+collisions_clean %>%
+  select(
+    VITESSE_AUTOR,
+    NB_VEH_IMPLIQUES_ACCDN,
+    nb_automobile_camion_leger,
+    nb_motocyclette ) %>%
+  cor() %>%
+  heatmap(Rowv = NA, Colv = NA)
+
 # Distribution de la gravité 
 ggplot(collisions_clean, aes(x = GRAVITE)) + geom_bar() +
   labs( title = "Distribution de la gravité des accidents",
