@@ -101,14 +101,7 @@ Le tableau de classification montre que le modèle prédit systématiquement la 
 
 
 
-## 7. Comparaison des modèles 
-
-
-
-
-
-
-## 8. Discussion et limites 
+## 7. Comparaison des modèles , discussion et limites 
 
 
 
