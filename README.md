@@ -41,7 +41,12 @@ L’analyse ne permet toutefois pas directement de faire des relations simples e
   ##### 5. Modélisation statistique
 La modélisation vise à estimer la probabilité qu’une collision routière soit grave ou non en fonction de caractéristiques observées liées à l’environnement routier et à d’autres conditions externes.
 Des modèles statistiques adaptés à une variable réponse binaire sont utilisés afin d’évaluer l’influence des variables retenues. La variable réponse est donc la gravité de l’accident.
-   ###### - 1e Modèle: 
+   ###### -   Modèle 1 : Régression logistique  
+
+
+
+
+   ###### -   Modèle 2 :
 
   ##### 6. Comparaison et interprétation des modèles 
 
