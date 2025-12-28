@@ -1,1 +1,8 @@
+Liste des packages utilisés dans le projet
 
+1. Readr: utilisée pour l'importation et l'exportation de fichiers CSV 
+    library(readr)
+
+2. Tidyverse: 
+    - dplyr : utilisée pour la manipulation des données  
+    - ggplot2 : utilisée pour la visualisation, graphiques, ...
