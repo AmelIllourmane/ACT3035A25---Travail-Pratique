@@ -65,4 +65,18 @@ table(Y_test, Y_pred_class)
 # MODÈLE LINÉAIRE GÉNÉRALISÉ
 
     #Construction du modèle linéaire 
+modele_lineaire <- lm(
+  gravite_binaire ~ 
+    VITESSE_AUTOR +
+    NB_VEH_IMPLIQUES_ACCDN +
+    CD_COND_METEO +
+    CD_ETAT_SURFC +
+    CD_CATEG_ROUTE +
+    nb_automobile_camion_leger +
+    nb_motocyclette,
+  data = collisions_clean
+)
+
+summary(modele_lineaire)
+
 
