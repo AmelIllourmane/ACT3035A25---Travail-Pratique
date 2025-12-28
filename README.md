@@ -40,13 +40,22 @@ L’analyse ne permet toutefois pas directement de faire des relations simples e
 
   ##### 5. Modélisation statistique
 La modélisation vise à estimer la probabilité qu’une collision routière soit grave ou non en fonction de caractéristiques observées liées à l’environnement routier et à d’autres conditions externes.
-Des modèles statistiques adaptés à une variable réponse binaire sont utilisés afin d’évaluer l’influence des variables retenues. La variable réponse est donc la gravité de l’accident.
+Des modèles statistiques adaptés à une variable réponse binaire sont utilisés afin d’évaluer l’influence des variables retenues. La variable réponse est la gravité de l’accident. On construit donc deux modèles actuariels qu'on va ensuite comparer. 
+
    ###### -   Modèle 1 : Régression logistique  
+Choix du modèle: La variable réponse gravite a été transformée en une variable binaire gravite_binaire (collision grave vs non grave).
+Dans ce contexte, la régression logistique est un modèle approprié, car : 
+la variable à prédire est binaire ; 
+elle permet d’estimer la probabilité qu’une collision soit grave ; 
+elle est largement utilisée en actuariat pour la sélection des risques et l’analyse d’événements rares.
 
 
 
+   ###### -   Modèle 2 : Modèle linéaire généralisé (GLM)
 
-   ###### -   Modèle 2 :
+
+
+   
 
   ##### 6. Comparaison et interprétation des modèles 
 
