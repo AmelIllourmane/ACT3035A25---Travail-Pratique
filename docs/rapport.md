@@ -60,15 +60,16 @@ L’analyse montre que :
 
 ### Relations entre variables
 Des graphiques exploratoires ont été produits afin d’examiner les relations entre plusieurs variables :
-- Gravité et vitesse autorisée (boxplots)
+- Gravité et vitesse autorisée (boxplots) : 
 Les boxplots suggèrent une dispersion légèrement plus élevée des vitesses autorisées pour les accidents les plus graves, bien qu’aucune séparation nette ne soit observée entre les niveaux de gravité.
-- Vitesse autorisée et nombre de véhicules impliqués (nuages de points)
+- Vitesse autorisée et nombre de véhicules impliqués (nuages de points) :
 Les nuages de points ne révèlent pas de relation linéaire claire entre la vitesse autorisée et le nombre de véhicules impliqués, quelle que soit la gravité.
-- Relation entre gravité et conditions météo:
-- Relation entre gravité et nombre de véhicules impliquées dans l'accident
+- Relation entre gravité et conditions météo :
+- Relation entre gravité et nombre de véhicules impliquées dans l'accident :
 La gravité des collisions tend à augmenter lorsque le nombre ed véhicules impliqués est plus élevé. On remarque que les accidents les plus graves sont ceux
 avec des collisions autour de 10 véhicules. 
-- Relation entre gravité et catégorie de la route
+- Relation entre gravité et catégorie de la route : Les collisions sur des artères principales, autouroutes et bretelles d'autoroute sont associées à des niveaux
+de gravité plus élevées selon les observations. Les routes résidentielles concentrent surtout des collisions d'une gravité faible. 
 
 ## 5. Définition du problème actuariel 
 ### Variable réponse
