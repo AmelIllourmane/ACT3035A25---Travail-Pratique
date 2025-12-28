@@ -35,13 +35,12 @@ sont traitées, et les variables codées numériquement sont transformées en fa
   ##### 3. Analyse exploratoire des données
 Une analyse exploratoire est  réalisée afin d’examiner la distribution des variables et les relations potentielles entre celles-ci.  
 Des tableaux de fréquences sont produits pour les variables catégorielles (gravité, conditions météorologiques, état de la surface et catégorie de route).  
-Des visualisations (histogrammes, densités, boxplots et nuages de points) permettent quand à eux  d’explorer les variables numériques, notamment la vitesse autorisée et le nombre de véhicules impliqués.
-L’analyse ne permet toutefois pas directement de faire des relations simples et linéaires entre les variables explicatives et la gravité, justifiant l’utilisation de modèles statistiques pour l’étape de modélisation.
+Des visualisations (histogrammes, densités, boxplots et nuages de points) permettent quand à elles d’explorer les variables numériques, soit la vitesse autorisée et le nombre de véhicules impliqués.
+L’analyse ne permet toutefois pas directement de faire des relations simples et linéaires entre les variables explicatives et la gravité, ce qui justifie l’utilisation de modèles statistiques pour l’étape de modélisation.
 
   ##### 5. Modélisation statistique
-La modélisation vise à estimer la probabilité qu’une collision routière soit grave non en fonction de caractéristiques observées liées à l’environnement routier et à d’autres conditions externes.
-Des modèles statistiques adaptés à une variable réponse binaire sont utilisés afin d’évaluer l’influence des variables retenues.
-La variable réponse est donc la gravité de l’accident.
+La modélisation vise à estimer la probabilité qu’une collision routière soit grave ou non en fonction de caractéristiques observées liées à l’environnement routier et à d’autres conditions externes.
+Des modèles statistiques adaptés à une variable réponse binaire sont utilisés afin d’évaluer l’influence des variables retenues. La variable réponse est donc la gravité de l’accident.
 
   ##### 6. Comparaison et interprétation des modèles 
 
