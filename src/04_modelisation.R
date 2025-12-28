@@ -15,6 +15,7 @@ donnees <- donnees %>%
   mutate(gravite_binaire = ifelse(GRAVITE %in% c("Grave", "Mortel"), 1, 0))
 
 
+
 Y <- donnees$gravite_binaire
 X <- donnees %>%
   select(
