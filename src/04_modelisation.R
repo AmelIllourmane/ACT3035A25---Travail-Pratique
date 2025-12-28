@@ -57,4 +57,6 @@ Y_pred <- predict(
 
     # Classification 
 Y_pred_class <- ifelse(Y_pred > 0.5, 1, 0)
-
+   
+    #Évaluation du modèle 
+table(Y_test, Y_pred_class)
