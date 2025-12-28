@@ -25,3 +25,15 @@ X <- donnees %>%
     CD_CATEG_ROUTE,
     nb_automobile_camion_leger,
     nb_motocyclette )
+
+    # Séparation TRAIN/TEST (80% -20%)
+set.seed(3035)
+
+indice_repartition <- sample( 1:nrow(donnees), size = floor(0.8 * nrow(donnees)))
+
+X_train <- X[indice_repartition,]
+X_test  <- X[-indice_repartition,]
+
+Y_train <- Y[indice_repartition]
+Y_test  <- Y[-indice_repartition]
+
