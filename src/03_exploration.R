@@ -139,3 +139,5 @@ ggplot(collisions_clean, aes(x = NB_VEH_IMPLIQUES_ACCDN , fill = GRAVITE)) + geo
 ggplot(collisions_clean, aes(x = CATEG_ROUTE , fill = GRAVITE)) + geom_bar(position = "fill")
 
 
+
+
