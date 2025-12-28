@@ -2,7 +2,7 @@
 # Ce script vise à modéliser la gravité des collisions routières à partir des données nettoyées.
 # Il utilise deux modèles actuariels: 
     # 1. La régression logistique 
-    # 2. Le modèle linéaire généralisé (GLM) 
+    # 2. Le modèle linéaire 
 
 #1. RÉGRESSION LOGISTIQUE
 
@@ -60,3 +60,9 @@ Y_pred_class <- ifelse(Y_pred > 0.5, 1, 0)
    
     #Évaluation du modèle 
 table(Y_test, Y_pred_class)
+
+
+# MODÈLE LINÉAIRE GÉNÉRALISÉ
+
+    #Construction du modèle linéaire 
+
