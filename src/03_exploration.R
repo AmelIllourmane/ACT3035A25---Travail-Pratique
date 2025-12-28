@@ -88,8 +88,7 @@ library(tidyverse)
 # Histogramme vitesse autorisée 
 ggplot(collisions_clean, aes(x = VITESSE_AUTOR)) +
   geom_histogram(binwidth = 10, fill = "blue", color = "white") +
-  labs(
-    title = "Distribution de la vitesse autorisée",
+  labs( title = "Distribution de la vitesse autorisée",
     x = "Vitesse autorisée (km/h)",
     y = "Nombre d'accidents"
   )
@@ -97,8 +96,7 @@ ggplot(collisions_clean, aes(x = VITESSE_AUTOR)) +
 # Graphique de densité vitesse autorisée 
 ggplot(collisions_clean, aes(x = VITESSE_AUTOR)) +
   geom_density(fill = "blue", alpha = 0.5) +
-  labs(
-    title = "Densité de la vitesse autorisée",
+  labs( title = "Densité de la vitesse autorisée",
     x = "Vitesse autorisée (km/h)",
     y = "Densité"
   )
@@ -108,8 +106,7 @@ ggplot(collisions_clean, aes(x = VITESSE_AUTOR)) +
 # Boxplot vitesse par gravité
 ggplot(collisions_clean, aes(x = GRAVITE, y = VITESSE_AUTOR)) +
   geom_boxplot(fill = "red") +
-  labs(
-    title = "Vitesse autorisée selon la gravité de l'accident",
+  labs( title = "Vitesse autorisée selon la gravité de l'accident",
     x = "Gravité",
     y = "Vitesse autorisée (km/h)"
   )
