@@ -64,7 +64,7 @@ Des graphiques exploratoires ont été produits afin d’examiner les relations 
 Les boxplots suggèrent une dispersion légèrement plus élevée des vitesses autorisées pour les accidents les plus graves, bien qu’aucune séparation nette ne soit observée entre les niveaux de gravité.
 - Vitesse autorisée et nombre de véhicules impliqués (nuages de points) :
 Les nuages de points ne révèlent pas de relation linéaire claire entre la vitesse autorisée et le nombre de véhicules impliqués, quelle que soit la gravité.
-- Relation entre gravité et conditions météo :
+- Relation entre gravité et conditions météo : On remarque que la grande majorité des accidents, se produisent lorsque les conditions météorologiques sont favorables, soit claires. Les conditions météorologiques défavorables sont quant à elles moins fréquentes, mais elles représentent une proportion plus élevée de collisions graves ou mortelles. 
 - Relation entre gravité et nombre de véhicules impliquées dans l'accident :
 La gravité des collisions tend à augmenter lorsque le nombre ed véhicules impliqués est plus élevé. On remarque que les accidents les plus graves sont ceux
 avec des collisions autour de 10 véhicules. 
