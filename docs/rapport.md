@@ -83,7 +83,7 @@ L’objectif de la modélisation est d’estimer la probabilité qu’une collis
 
 
 ## 6. Modélisation actuarielle 
-La modélisation vise à estimer la probabilité qu’une collision routière soit grave ou non en fonction de caractéristiques observées liées à l’environnement routier et à d’autres conditions externes. La variable réponse est la gravité de l’accident. On construit donc deux modèles actuariels qu'on va ensuite comparer. 
+La modélisation vise à estimer la gravité d'une collision routière en fonction de caractéristiques observées liées à l’environnement routier et à d’autres conditions externes. On construit donc deux modèles actuariels qu'on va ensuite comparer pour la variable reponse gravite
 
    ###### -   Modèle 1 : Régression logistique  
 Choix du modèle: La variable réponse gravite a été transformée en une variable binaire gravite_binaire (collision grave vs non grave).
