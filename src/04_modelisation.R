@@ -55,3 +55,6 @@ Y_pred <- predict(
   type = "response"
 )
 
+    # Classification 
+Y_pred_class <- ifelse(Y_pred > 0.5, 1, 0)
+
