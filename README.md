@@ -45,7 +45,7 @@ Des modèles statistiques adaptés à une variable réponse binaire sont utilis�
    ###### -   Modèle 2 : Modèle linéaire 
 
   ##### 6. Comparaison et interprétation des modèles 
-Les performances du modèle linéaire et de la régression logistique sont comparées afin de justifier le choix du modèle le plus approprié pour prédire la gravité des collisions.
+Les performances du modèle linéaire et du modèle de régression logistique sont comparées afin de justifier le choix du modèle le plus approprié pour prédire la gravité des collisions.
 
 
 
