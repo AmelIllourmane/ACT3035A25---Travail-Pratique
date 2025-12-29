@@ -53,6 +53,7 @@ Y_pred <- predict( modele_logistique,
   newdata = X_test,
   type = "response"
 )
+head(Y_pred,20)
 
     # Classification 
 Y_pred_class <- ifelse(Y_pred > 0.5, 1, 0)
@@ -80,8 +81,11 @@ summary(modele_lineaire)
 
     # Prédiction sur l'échantillon test 
 y_pred_lm <- predict(modele_lineaire, newdata = X_test)
+head(y_pred_lm,20)
 
     # Classification 
 y_pred_lm_class <- ifelse(y_pred_lm > 0.5, 1, 0)
 
+    # Évaluation modèle 
+table(Y_test, y_pred_lm_class)
 
