@@ -74,7 +74,7 @@ modele_lineaire <- lm(
     CD_CATEG_ROUTE +
     nb_automobile_camion_leger +
     nb_motocyclette,
-  data = collisions_clean
+  data = donnees
 )
 
 summary(modele_lineaire)
