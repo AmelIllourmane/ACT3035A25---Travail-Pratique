@@ -1,4 +1,4 @@
-# Comparaison des modèles
+  # Comparaison des modèles
 summary(modele_lineaire)
 summary(modele_logistique)
 
