@@ -49,8 +49,7 @@ modele_logistique <- glm( gravite_binaire ~ .,
 summary(modele_logistique)
 
     # Prédiction sur l'échantillon test 
-Y_pred <- predict(
-  modele_logistique,
+Y_pred <- predict( modele_logistique,
   newdata = X_test,
   type = "response"
 )
@@ -74,9 +73,15 @@ modele_lineaire <- lm(
     CD_CATEG_ROUTE +
     nb_automobile_camion_leger +
     nb_motocyclette,
-  data = donnees
+  data =  (cbind(X_train, gravite_binaire = Y_train))
 )
 
 summary(modele_lineaire)
+
+    # Prédiction sur l'échantillon test 
+y_pred_lm <- predict(modele_lineaire, newdata = X_test)
+
+    # Classification 
+y_pred_lm_class <- ifelse(y_pred_lm > 0.5, 1, 0)
 
 
